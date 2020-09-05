@@ -24,6 +24,11 @@ namespace ApiSecureStudent.Controllers
             return db.Students;
         }
 
+        public IHttpActionResult GetStudent()
+        {
+            throw new NotImplementedException();
+        }
+
         // GET: api/Students/5
         [Authorize]
         [ResponseType(typeof(Student))]
